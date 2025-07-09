@@ -1,0 +1,10 @@
+.header-gradient {
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+}
+.footer-gradient {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: white !important;
+}
+.list-group-item:hover {
+  filter: brightness(1.05);
+}
