@@ -42,7 +42,7 @@ app.post("/add", async (req, res) => {
   res.redirect(`/?filter=${filter}`);
 });
 
-app.put("/edit/:id", async (req, res) => {
+app.put("/edit", async (req, res) => {
   const { id } = req.params;
   const { title, priority } = req.body;
   const filter = req.query.filter || "all";
