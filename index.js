@@ -12,9 +12,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 mongoose
-  .connect(
-    "mongodb+srv://realkasuprasanth:ItWtwojuc99dpSUY@cluster0.zcarl.mongodb.net/todoDB?retryWrites=true&w=majority&appName=Cluster0"
-  )
+  .connect(process.env.MONGODB_URI)
   .then(() => console.log("✅ Connected to MongoDB"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
