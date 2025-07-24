@@ -8,3 +8,6 @@
 .list-group-item:hover {
   filter: brightness(1.05);
 }
+main {
+  min-height: 72vh;
+}
